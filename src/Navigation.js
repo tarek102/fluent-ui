@@ -8,54 +8,85 @@ const Links = [
                 name: 'Dashboard',
                 url: '/',
                 key: 'Key1',
-                styles: {
-                    root: {
-                        fontSize: 20,
-                        color: '#106ebe',
+                iconProps: {
+                    iconName: 'News',
+                    styles: {
+                        root: {
+                            fontSize: 20,
+                            color: '#106ebe',
+                        }
                     }
                 }
+                
             },
             {
-                name: 'Dashboard',
+                name: 'Settings',
                 url: '/',
-                key: 'Key1',
-                styles: {
-                    root: {
-                        fontSize: 20,
-                        color: '#106ebe',
+                key: 'Key2',
+                iconProps: {
+                    iconName: 'playerSettings',
+                    styles: {
+                        root: {
+                            fontSize: 20,
+                            color: '#106ebe',
+                        }
                     }
                 }
+                
             },
             {
-                name: 'Dashboard',
+                name: 'Transfer',
                 url: '/',
-                key: 'Key1',
-                styles: {
-                    root: {
-                        fontSize: 20,
-                        color: '#106ebe',
+                key: 'Key3',
+                iconProps: {
+                    iconName: 'SwitcherStartEnd',
+                    styles: {
+                        root: {
+                            fontSize: 20,
+                            color: '#106ebe',
+                        }
                     }
                 }
+                
             },
             {
-                name: 'Dashboard',
+                name: 'Stats',
                 url: '/',
-                key: 'Key1',
-                styles: {
-                    root: {
-                        fontSize: 20,
-                        color: '#106ebe',
+                key: 'Key4',
+                iconProps: {
+                    iconName: 'StackedLineChart',
+                    styles: {
+                        root: {
+                            fontSize: 20,
+                            color: '#106ebe',
+                        }
                     }
                 }
-            }
+                
+            },
         ]
     }
-]
+            
+];
+
+const navigationStyles = {
+    root: {
+        height: '100vh',
+        boxSizing: 'border-box',
+        border: '1px solid #eee',
+        overflowY: 'auto',
+        paddingTop: '10vh',
+    }
+}
 
 const Navigation = () => {
     initializeIcons();
     return (
-        <Nav />
+        <Nav 
+            groups={Links}
+            selectedKey="key1"
+            styles = {navigationStyles}
+        />
     )
 }
 
