@@ -3,7 +3,7 @@ import 'office-ui-fabric-react/dist/css/fabric.css';
 import './App.css';
 import Navigation from './Navigation';
 import CardSection from './CardsSection';
-// import { Card } from '@uifabric/react-cards';
+import OperationsTable from './OperationsTable';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
               <CardSection />
             </div>
             <div className='ms-Grid-row'>
-
+              <OperationsTable />
             </div>
           </div>
         </div>
