@@ -14,11 +14,6 @@ In this project I have created the front end of a Finnancial dashboard using Rea
 
 
 
-## Live Demo 
-
-[Demo](https://tarek102.github.io/JavaScript-capstone/dist/)
-
-
 ## Getting Started
 
 To successfully utilize this project first of all you need to clone or download the repository. If you want to add or edit the files you can do that by simply opening the file folder in VS code. Once you have the project opened in the Vs code, write in the terminal the following commands:
